@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    height: fit-content;
+    background-color: black
+}
+
+.logo-apple {
+    width: 35px;
+    height: 35px;
+}
+
+.nav ul {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+}
+
+nav ul li {
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav ul li a {
+    font-weight: 1;
+    font-size: small;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.687);
+
+}
+
+.buy-it-now p {
+    padding: 10px;
+    margin: 0px;
+    color: rgba(240, 248, 255, 0.751);
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    font-size: small;
+    font-family: sans-serif;
+    height: fit-content;
+    font-weight: 100;
+}
+
+.buy-it-now p button {
+    margin-left: 5px;
+    background-color: azure;
+    border-style: hidden;
+    border-radius: 3px;
+}
+
+.main-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.description {
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.description:hover {
+    line-height: normal;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.description-content {
+    line-height: 20px;
+    font-size: small;
+    font-weight: 100;
+    color: rgba(240, 248, 255, 0.829);
+    margin-left: 15%;
+
+}
+
+.description h1 {
+    padding-left: 40px;
+    margin-top: 10%;
+    color: rgba(240, 248, 255, 0.82);
+    font-family: sans-serif;
+}
+
+.product-img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.product-img img {
+    padding-top: 10%;
+    width: 486px;
+    height: 582px;
+}
+
+.product-img img:hover {
+    transition: 0.4s;
+    width: 586;
+    height: 682px;
+}
