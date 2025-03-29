@@ -1,11 +1,11 @@
 body {
     margin: 0px;
     background-color: black;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .content {
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     margin: 0px;
     flex-direction: column;
@@ -14,7 +14,7 @@ body {
 .nav {
     display: flex;
     justify-content: center;
-    min-width: 100vw;
+    min-width: 100%;
     height: fit-content;
     background-color: black
 }
@@ -30,7 +30,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 60vw;
+    width: 60%;
 }
 
 nav ul li {
@@ -72,7 +72,7 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 20%;
 }
 
 .description {
@@ -119,4 +119,16 @@ nav ul li {
     transition: 0.4s;
     width: 586;
     height: 682px;
+}
+
+.question {
+    margin-top: 10%;
+    font-family: sans-serif;
+    color: rgba(240, 248, 255, 0.808);
+    font-weight: 500;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    border-top: 2px solid  rgba(93, 95, 97, 0.902);
+    padding-top: 10%;
 }
