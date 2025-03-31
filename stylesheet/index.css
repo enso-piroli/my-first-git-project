@@ -105,20 +105,15 @@ nav ul li {
 }
 
 .product-img {
-    width: fit-content;
-    height: fit-content;
-}
-
-.product-img img {
     padding-top: 10%;
-    width: 486px;
-    height: 582px;
+    width: 30%;
+    height: 30%;
 }
 
-.product-img img:hover {
+.product-img:hover {
     transition: 0.4s;
-    width: 586;
-    height: 682px;
+    width: 35%;
+    height: 35%;
 }
 
 .question {
@@ -129,6 +124,38 @@ nav ul li {
     width: 100%;
     height: fit-content;
     text-align: center;
-    border-top: 2px solid  rgba(93, 95, 97, 0.902);
+    border-top: 2px solid rgba(93, 95, 97, 0.902);
     padding-top: 10%;
+}
+
+
+.visual-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    gap: 20%;
+
+}
+
+.visual-container button {
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    border: none;
+}
+
+.visual-container button img {
+    width: 300%;
+    height: 300%;
+    background-color: black;
+}
+
+.img-visual-container {
+    width: 30%;
+    height: 30%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
