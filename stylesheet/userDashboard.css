@@ -13,13 +13,14 @@ body {
 }
 
 .navbar {
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30%;
-        border-bottom: 4px solid rgba(158, 158, 158, 0.74); /* Fix */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+    border-bottom: 4px solid rgba(158, 158, 158, 0.74);
+    /* Fix */
 }
 
 .navbar div {
@@ -54,4 +55,110 @@ body {
 .shopping-cart img {
     width: 40px;
     height: 40px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.products input {
+    width: 30%;
+    margin-left: 37%;
+    height: 33px;
+    border-radius: 10px;
+    background-color: black;
+    color: rgba(240, 248, 255, 0.689);
+}
+
+.page-tittle {
+    color: rgba(240, 248, 255, 0.783);
+    width: fit-content;
+    margin-left: 49%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.all-products {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 400px;
+    margin-left: 30%;
+    gap: 5%;
+}
+
+.products-list button {
+    width: 100%;
+    height: fit-content;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: rgba(220, 220, 220, 0.774);
+    background-color: black;
+    border: none;
+}
+
+.products-list button:hover {
+    background-color: rgba(71, 71, 71, 0.687);
+}
+
+.products-show {
+    display: inline-flex;
+    justify-content: flex-start;
+    border-left: 5px solid;
+    border-color: rgba(70, 70, 70, 0.411);
+    padding-left: 40px;
+    gap: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    height: fit-content;
+
+}
+
+.product-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(57, 57, 57, 0.242);
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.product-1 img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-1 h2 {
+    color: rgba(240, 248, 255, 0.756);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.product-1 h4 {
+    color: rgba(240, 248, 255, 0.756);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.product-1 p {
+    font-weight: 200;
+    font-family: sans-serif;
+    color: rgba(240, 248, 255, 0.728);
+}
+
+.product-1:hover {
+    background-color: rgba(75, 75, 75, 0.632);
+    border-radius: 20px;
 }
