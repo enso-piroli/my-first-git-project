@@ -89,23 +89,35 @@ body {
 .products-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 200px;
     height: 400px;
-    margin-left: 30%;
     gap: 5%;
 }
 
+.products-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Makes buttons stretch full width */
+}
+
 .products-list button {
-    width: 100%;
-    height: fit-content;
+    display: flex; /* Enables flexbox inside the button */
+    justify-content: flex-start; /* Aligns text to the left */
+    align-items: center; /* Ensures vertical alignment */
+    padding-left: 10px; /* Moves text away from the left edge */
+    width: 100%; /* Ensures full width */
+    height: auto;
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
     text-decoration: none;
     color: rgba(220, 220, 220, 0.774);
     background-color: black;
     border: none;
 }
+
+
 
 .products-list button:hover {
     background-color: rgba(71, 71, 71, 0.687);

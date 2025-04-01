@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Simulate login authentication (Replace this with backend validation)
-        if (username === "admin" && password === "1234") {
+        if (username === "user" && password === "1234") {
             alert("Login successful!");
             window.location.href = "dashboard.html"; // Redirect to dashboard
         } else {
