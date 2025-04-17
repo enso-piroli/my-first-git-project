@@ -1,4 +1,4 @@
-let imageArray = ["images/apple-logo.jpg", "images/iphone.png"]; // Your image sources
+let imageArray = ["../images/apple-logo.jpg", "../images/iphone.png"]; // Your image sources
 let currentIndex = 0;
 
 let img = document.querySelector(".img-visual-container");
