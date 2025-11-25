@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const Product = require('./models/Product');
 const Cart = require('./models/Cart');
-const MONGO_URI = ""
+const MONGO_URI = "mongodb+srv://ensopirolideveloper:4YUAsTln6kbEGZPP@cluster0.ggbzazg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 const app = express();
 
