@@ -3,13 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.querySelector(".submit-btn");
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
-    const signUpButton = document.querySelector(".sign-up-btn");
-
-
-
-    signUpButton.addEventListener("click", function () {
-        window.location.href = "../html/signUp.html"; // Redirect to sign-up page
-    })
 
     // Add event listener for button click
     submitButton.addEventListener("click", function (event) {
@@ -19,26 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = usernameInput.value.trim();
         const password = passwordInput.value.trim();
 
-        fetch("http://localhost:5000/Login", {
+        fetch("http://localhost:5000/SignUp", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({ username, password }) // Use variables, not hardcoded values
-        }).then(res => res.json())
-            .then(data => {
-                if (data.message === "Admin Login successful") {
-                    window.location.href = "../html/adminDashboard.html";
-                }
-                else if (data.message === "Login successful") {
-                    localStorage.setItem("userId", data.userId);
-                    console.log("User ID stored:", data.userId);
-                    window.location.href = "../html/userDashboard.html";
+        }).then(res => {
+            if (res.status == 409 || res.status == 201) {
+                window.location.href = "../html/log-in.html";
+            }
+        })
 
-                } else {
-                    alert(data.message);
-                }
-            })
             .catch(err => console.error(err));
 
     });

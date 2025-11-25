@@ -98,15 +98,21 @@ body {
 .products-list {
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Makes buttons stretch full width */
+    align-items: stretch;
+    /* Makes buttons stretch full width */
 }
 
 .products-list button {
-    display: flex; /* Enables flexbox inside the button */
-    justify-content: flex-start; /* Aligns text to the left */
-    align-items: center; /* Ensures vertical alignment */
-    padding-left: 10px; /* Moves text away from the left edge */
-    width: 100%; /* Ensures full width */
+    display: flex;
+    /* Enables flexbox inside the button */
+    justify-content: flex-start;
+    /* Aligns text to the left */
+    align-items: center;
+    /* Ensures vertical alignment */
+    padding-left: 10px;
+    /* Moves text away from the left edge */
+    width: 100%;
+    /* Ensures full width */
     height: auto;
     font-family: sans-serif;
     font-size: 20px;
@@ -136,7 +142,7 @@ body {
 
 }
 
-.product-1 {
+span {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,30 +153,30 @@ body {
     margin-bottom: 5%;
 }
 
-.product-1 img {
+span img {
     width: 200px;
     height: 200px;
 }
 
-.product-1 h2 {
+span h2 {
     color: rgba(240, 248, 255, 0.756);
     font-family: sans-serif;
     font-weight: 100;
 }
 
-.product-1 h4 {
+span h4 {
     color: rgba(240, 248, 255, 0.756);
     font-family: sans-serif;
     font-weight: 100;
 }
 
-.product-1 p {
+span p {
     font-weight: 200;
     font-family: sans-serif;
     color: rgba(240, 248, 255, 0.728);
 }
 
-.product-1:hover {
+span:hover {
     background-color: rgba(75, 75, 75, 0.632);
     border-radius: 20px;
 }

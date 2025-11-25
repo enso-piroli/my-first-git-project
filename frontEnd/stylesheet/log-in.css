@@ -20,14 +20,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(26, 25, 25);
-    border: 10px  rgba(193, 192, 192, 0.854);
+    border: 10px rgba(193, 192, 192, 0.854);
     border-radius: 50px;
     padding-bottom: 4%;
     border-style: inset;
 
 }
 
-.main-div:hover{
+.main-div:hover {
     width: 38%;
     height: 70%;
     transition: 0.4s;
@@ -57,12 +57,12 @@ body {
     height: 10%;
 }
 
-.main-div button{
-   width: fit-content;
-   height: fit-content;
-   padding: 5px;
+.main-div button {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
     margin-top: 10%;
-    border:5px inset rgb(225, 225, 225);
+    border: 5px inset rgb(225, 225, 225);
     font-family: sans-serif;
     border-radius: 5px;
 }
